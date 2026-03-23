@@ -8,7 +8,9 @@
 </head>
 <body> 
      <h1 id="titulo_principal">O senhor dos anéis</h1>
-    <h2 class="titulo_secundario">Uma das trilgias mais famosas do cinema - Uma saga do cinema legal</h2>
+    <h2 class="titulo_secundario">Uma das trilgias mais famosas do cinema - Uma saga do cinema legal
+        pneumoultramicroscopicossilicovu<wbr>lcanoconiótico
+    </h2>
 
 <nav>
         <a href="index.html" >Home</a>
@@ -68,13 +70,13 @@
             <input type="search" id="pesquisa" name="pesquisa"><br><br>
 
             <label for="descrição">informe aqui o que voce gosta nos filmes</label><br>
-            <textarea cols="10" rows="10" name="descrição" id="descrição"></textarea><br><br>
+            <textarea cols="20" rows="20" name="descrição" id="descrição"></textarea><br><br>
 
             <fieldset>
                <legend>Qual seu filme favorito</legend>
                <label for="filme 1">filme 1><input type="radio" name="filme1" id="filme1" value="filme 1"></label>
 
-               <label for="filme 2">filme 2><input checked ="radio" name="filme2" id="filme2" value="filme 2"></label>
+               <label for="filme 2">filme 2><input type="radio" name="filme2" id="filme2" value="filme 2"></label>
 
                <label for="filme 3">filme 3><input type="radio" name="filme3" id="filme3" value="filme 3"></label>
             </fieldset>
@@ -83,11 +85,56 @@
                 <option value="filme1">filme 1</option>
                 <option value="filme2">filme 2</option>
                 <option selected value="filme3">filme 3</option>
-            </select>
+            </select><br><br>
+
+            <label for="nivel">escolha o nivel</label>
+            <input type="range" max="10" min="1" id="nivel" name="nivel">
+
+<select id="lista_suspensa" name="lista">
+    <optgroup label="teste de legenda no combobox 2">
+        <option value="teste 1">teste 1</option>
+        <option value="teste 2">teste 2</option>
+        <option value="teste 3">teste 3</option>
+    </optgroup>
+    <optgroup label="teste de legenda no combobox 2">
+        <option value="teste 4">teste 1</option>
+        <option value="teste 5">teste 2</option>
+        <option value="teste 6">teste 3</option>
+    </optgroup>
+</select>
+
+<fieldset>
+<legend>desenvolvimento para internet</legend>
+<label><input type="checkbox" name="php" value="php">PHP</label>
+<label><input type="checkbox" name="html5" value="html5">html5</label>
+<label><input type="checkbox" name="css" value="css">CSS</label>
+<label><input type="checkbox" name="js" value="js">JAVASCRIPT</label>
+</fieldset><br><br>
+
+<!-- Datalist possiveis ganhadores da copa do mundo-->
+<input type="text" id="busca_datalist" list="paises">
+<datalist id="paises">
+<option>brasil</option>
+<option>França</option>
+<option>argentina</option>
+<option>alemanha</option>
+<option>espanha</option>
+</datalist><br><br>
+
+<audio controls muted autoplay loop>
+    <source src="audio/hino_nacional_brasileiro.mp3" type="audio/mp3">
+    Navegador não é compativel para executar audio
+</audio><br><br>
+
+<video controls autolpay loop poster>
+    <source src="video/large.mp4" type="video/mp4">
+</video><br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0Hvnq3StpP4?si=E_TRnFhM_PV2M3pv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
-<button type="reset">limpar</button>
+        <button type="reset">limpar</button>
         <button type="submit">Enviar</button>
     
        </form>
